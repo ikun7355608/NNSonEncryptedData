@@ -21,6 +21,7 @@ class Ui_MainWindow(object):
         super().__init__()
         self.dialog = file_delete.Ui_Dialog()
 
+        libsql.create_table_all()
         self.res = ""
         (self.pp,self.msk) = ipe.setup(10)
         (self.detB, self.B, self.Bstar, self.group, self.g1, self.g2) = self.msk
